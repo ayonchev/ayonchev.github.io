@@ -1,27 +1,45 @@
+@font-face {
+    font-family: AudiBold;
+    src: url("fonts/AudiType-ExtendedBold.woff");
+}
+
+@font-face {
+    font-family: AudiNormal;
+    src: url("fonts/AudiType-ExtendedNormal.woff");
+}
+
 * {
-	box-sizing: border-box;
+	box-sizing: border-box !important;
 }
 
 body {
 	margin: 0;
 	overflow-x: hidden;
 	position: relative; 
+	font-family: AudiNormal;
 }
 
-.video-container {
+h1,h2,h3,h4,h5,h6 {
+	font-family: AudiBold;
+}
+
+.navbar-collapse {
+	text-align: center;
+}
+
+.responsive-container {
 	height: 100vh;
 }
 
-.fullscreen-video-wrap {
+#fullscreen-wrapper {
 	position: absolute;
-	top: 200;
 	left: 0;
 	height: 100vh;
 	width: 100%;
 	overflow: hidden;
 }
 
-.fullscreen-video-wrap video {
+#fullscreen-wrapper video {
 	min-height: 100%;
 	min-width: 100%;
 }
@@ -30,7 +48,6 @@ body {
 	width: 100vw;
 	height: 100vh;
 	position: absolute;
-	top: 200;
 	left: 0;
 	background: rgb(111, 118, 130);
 	opacity: 0.3;
@@ -41,11 +58,36 @@ nav {
 	z-index: 2;
 }
 
-.navbar-header .navbar-left img {
-  	height: 10vh;
-    opacity: 0.7;
-  }
+.navbar {
+	background-color: rgba(52, 58, 64, 0.7)!important;
+}
+
+.navbar-nav a {
+	font-family: AudiBold;
+	color: white !important;
+	opacity: 0.7;
+	margin-left: 3vw;
+	font-size: 1.1em;
+}
+
+.navbar-nav a:hover {
+	opacity: 1;
+}
+
+.navbar-nav a:active {
+	border-bottom: 1px solid white;
+}
+
+.navbar-toggler-icon {
+	color: white !important;
+}
+
+#logo {
+	height: 7vh;
+}
   
-  .navbar-header .navbar-left img:hover {
-  	opacity: 1;
-  }
+#logo:hover {
+  filter: brightness(1.5);
+}
+
+

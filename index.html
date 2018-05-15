@@ -1,52 +1,72 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- Bootstrap CSS 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">-->
-	<link href="style.css" rel="stylesheet" type="text/css" />
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		
+		<link href="style.css" rel="stylesheet" type="text/css" />
 
-    <title>Audi A7 Official</title>
-  </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
-		<nav class="navbar navbar-inverse navbar-fixed-top">
-		  <div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-				  <span class="icon-bar"></span>
-				  <span class="icon-bar"></span>
-				  <span class="icon-bar"></span>                        
-			  </button>
-			  <a class="navbar-left" href="#"><img src="http://www.carlogos.org/logo/Audi-logo-2009-1920x1080.png"></a>
+		<title>Audi A7 Official</title>
+	</head>
+	<body data-spy="scroll" data-target=".navbar" data-offset="220">
+	
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+			<a class="navbar-brand" href="#">
+				<img src="http://www.carlogos.org/logo/Audi-logo-2009-1920x1080.png" id="logo" alt="logo">
+			</a>
+			<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			
+			<div class="collapse navbar-collapse" id="menu">
+				<div class="navbar-nav ml-auto">
+					<a class="nav-item nav-link" href="#interior">Interior<span class="sr-only">(current)</span></a>
+					<a class="nav-item nav-link" href="#exterior">Exterior</a>
+					<a class="nav-item nav-link" href="#">Pricing</a>
+				</div>
 			</div>
-			<div>
-			  <div class="collapse navbar-collapse" id="myNavbar">
-				<ul class="nav navbar-nav navbar-right">
-				  <li><a href="#">Section 1</a></li>
-				  <li><a href="#">Section 2</a></li>
-				  <li><a href="#">Section 3</a></li>
-				</ul>
-			  </div>
-			</div>
-		  </div>
 		</nav>
-	
-    <section class="video-container">
-		<div class="fullscreen-video-wrap">
-			<video src="videos/audi_a7_trailer.mp4" autoplay="true" muted="true" loop="true"></video>
-		</div>
-		<div class="video-overlay"></div>
-	</section>
-	
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>-->
-  </body>
+		
+		<header class="responsive-container">
+			<div id="fullscreen-wrapper">
+				<video src="videos/audi_a7_trailer.mp4" id="background-video" autoplay muted loop></video>
+			</div>
+			<div class="video-overlay"></div>
+		</header>
+		
+		<section class="container p-4" id="interior">
+			<h2>Interior</h2>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+			<img src="images/2019_audi_a7_25_1920x1080.jpg" class="img-fluid" alt="interior" />
+		</section>
+		
+		<section id="exterior">
+			<div class="container p-4">
+				<div class="row">
+					<div class="col-md-6">
+						<img src="images/2018-audi-a7-sportback.jpg" class="img-fluid" alt ="asd" />
+					</div>
+					<div class="col-md-6">
+						<img src="images/2018-audi-a7-sportback (1).jpg" class="img-fluid" alt ="asd" />
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<script type="text/javascript">
+			$(document).ready(function () {
+				if($(window).width() < 1400) {
+					$("#fullscreen-wrapper").addClass("embed-responsive");
+					$("#fullscreen-wrapper").addClass("embed-responsive-16by9");
+					$("#background-video").addClass("embed-responsive-item");  
+				}    
+			});
+		</script>
+	</body>
 </html>
