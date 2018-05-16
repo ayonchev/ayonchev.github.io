@@ -9,85 +9,113 @@
 }
 
 * {
-	box-sizing: border-box !important;
+    box-sizing: border-box !important;
 }
 
 body {
-	margin: 0;
-	overflow-x: hidden;
-	position: relative; 
-	font-family: AudiNormal;
+    margin: 0;
+    overflow-x: hidden;
+    position: relative;
+    font-family: AudiNormal;
 }
 
-h1,h2,h3,h4,h5,h6 {
-	font-family: AudiBold;
+h1, h2, h3, h4, h5, h6 {
+    font-family: AudiBold;
 }
 
 .navbar-collapse {
-	text-align: center;
-}
-
-.responsive-container {
-	height: 100vh;
-}
-
-#fullscreen-wrapper {
-	position: absolute;
-	left: 0;
-	height: 100vh;
-	width: 100%;
-	overflow: hidden;
-}
-
-#fullscreen-wrapper video {
-	min-height: 100%;
-	min-width: 100%;
-}
-
-.video-overlay {
-	width: 100vw;
-	height: 100vh;
-	position: absolute;
-	left: 0;
-	background: rgb(111, 118, 130);
-	opacity: 0.3;
-	z-index: 1;
+    text-align: center;
 }
 
 nav {
-	z-index: 2;
+    z-index: 2;
 }
 
 .navbar {
-	background-color: rgba(52, 58, 64, 0.7)!important;
+    background-color: rgba(52, 58, 64, 0.7) !important;
 }
 
 .navbar-nav a {
-	font-family: AudiBold;
-	color: white !important;
-	opacity: 0.7;
-	margin-left: 3vw;
-	font-size: 1.1em;
+    font-family: AudiBold;
+    color: white !important;
+    opacity: 0.7;
+    margin-left: 3vw;
 }
 
-.navbar-nav a:hover {
-	opacity: 1;
+.navbar-nav a:hover, #main-footer .nav a:hover {
+    opacity: 1;
 }
 
-.navbar-nav a:active {
-	border-bottom: 1px solid white;
-}
-
-.navbar-toggler-icon {
-	color: white !important;
+.navbar-nav a.active {
+    opacity: 1;
+    border-bottom: 1px solid white;
 }
 
 #logo {
-	height: 7vh;
+    height: 7vh;
 }
-  
+
 #logo:hover {
-  filter: brightness(1.5);
+    filter: brightness(1.5);
 }
 
+.responsive-container {
+    height: 100vh;
+}
 
+#fullscreen-wrapper {
+    position: absolute;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#fullscreen-wrapper video {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.video-overlay {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    background: rgb(111, 118, 130);
+    opacity: 0.3;
+    z-index: 1;
+}
+
+section {
+    padding-top: 8vh !important;
+}
+
+#main-footer {
+    background-color: rgb(52, 58, 64);
+    color: white;
+}
+
+#main-footer #menu p {
+    text-align: right;
+}
+
+#main-footer #menu .nav {
+    justify-content: flex-end;
+}
+
+#main-footer .nav a {
+    font-size: 2em;
+    color: white;
+    opacity: 0.7;
+    transition: opacity 0.5s;
+}
+
+@media only screen and (max-width: 768px) {
+    #main-footer, #main-footer #menu p  {
+        text-align: center;
+    }
+
+    #main-footer #menu .nav {
+        justify-content: center;
+    }
+}
