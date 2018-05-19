@@ -12,8 +12,14 @@
     box-sizing: border-box !important;
 }
 
-body {
+html, body {
+    width: 100%;
+    height: 100%;
     margin: 0;
+    padding: 0;
+}
+
+body {
     overflow-x: hidden;
     position: relative;
     font-family: AudiNormal;
@@ -117,5 +123,9 @@ section {
 
     #main-footer #menu .nav {
         justify-content: center;
+    }
+
+    html {
+        resize: none;
     }
 }
