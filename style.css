@@ -17,15 +17,15 @@ html {
 }
 
 html, body {
-	width: 100%;
+	width: 100vw;
 	height: 100%;
 	margin: 0;
 	padding: 0;
 }
 
 body {
-    position: relative;
-    font-family: AudiNormal;
+	position: relative;
+	font-family: AudiNormal;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -117,8 +117,8 @@ section {
     color: white;
 }
 
-#main-footer #menu .nav {
-    justify-content: flex-end;
+#main-footer #media-menu .nav {
+	justify-content: flex-end;
 }
 
 #main-footer .nav a {
@@ -137,13 +137,24 @@ section {
 		padding-top: 70px !important;
 	}
 
-    #main-footer, #main-footer #menu p  {
-        text-align: center;
-    }
+	#main-footer, #main-footer #media-menu p {
+		text-align: center;
+		padding-right: 0 !important;
+	}
 
-    #main-footer #menu .nav {
+    #main-footer #media-menu .nav {
         justify-content: center;
     }
+
+	#media-menu {
+		order: 1
+	}
+
+	#audi-brand {
+		order: 2;
+		text-align: center;
+		padding-left: 0 !important;
+	}
 
     html {
         resize: none;
