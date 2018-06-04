@@ -101,11 +101,11 @@ section {
 }
 
 #contact-us {
-	padding-top: 30px !important;
+	padding-top: 60px !important;
 }
 
 #contact-us form textarea {
-	height: 100px;
+	height: 150px;
 }
 
 #contact-us form button {
