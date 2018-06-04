@@ -58,7 +58,8 @@ nav {
 }
 
 #logo {
-    height: 7vh;
+    /*height: 7vh;*/
+	width: 120px;
 }
 
 #logo:hover {
@@ -93,16 +94,24 @@ nav {
 }
 
 section {
-    padding-top: 8vh !important;
+	padding-top: 80px !important;
+}
+
+#contact-us {
+	padding-top: 30px !important;
+}
+
+#contact-us form textarea {
+	height: 100px;
+}
+
+#contact-us form button {
+	width: 100%;
 }
 
 #main-footer {
     background-color: rgb(52, 58, 64);
     color: white;
-}
-
-#main-footer #menu p {
-    text-align: right;
 }
 
 #main-footer #menu .nav {
@@ -117,6 +126,14 @@ section {
 }
 
 @media only screen and (max-width: 768px) {
+	#logo {
+		width: 90px;
+	}
+
+	section {
+		padding-top: 70px !important;
+	}
+
     #main-footer, #main-footer #menu p  {
         text-align: center;
     }

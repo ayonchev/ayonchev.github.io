@@ -17,7 +17,7 @@
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
         <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand pl-3" href="#fullscreen-wrapper">
                 <img src="images/audi-logo.png" id="logo" alt="logo">
             </a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,11 +25,12 @@
             </button>
 
             <div class="collapse navbar-collapse" id="menu">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link" href="#interior">Interior</a>
-                    <a class="nav-item nav-link" href="#exterior">Exterior</a>
-                    <a class="nav-item nav-link" href="#lights">Lights</a>
-                </div>
+				<div class="navbar-nav ml-auto pr-3">
+					<a class="nav-item nav-link" href="#interior">Interior</a>
+					<a class="nav-item nav-link" href="#exterior">Exterior</a>
+					<a class="nav-item nav-link" href="#lights">Lights</a>
+					<a class="nav-item nav-link" href="#contact-us">Contact us</a>
+				</div>
             </div>
         </nav>
 
@@ -74,7 +75,7 @@
         </section>
 
         <section id="lights" class="mb-4">
-            <div class="container">
+            <div class="container p-4">
                 <h2>Lights</h2>
                 <h6 class="text-uppercase text-muted">Bright.Brighter.Laser...</h6>
                 <hr />
@@ -89,41 +90,38 @@
                     </div>
                 </div>
         </section>
-        <!--
+        
         <section id="contact-us" class="bg-secondary mt-4">
-            <div class="container">
+            <div class="container p-4">
+				<h2 class="text-right text-white">Contact Us</h2>
+				<hr class="bg-white" />
                 <form>
-                    <div class="row">
-                        <div class="form-group col-md-6">
+                    <div class="row d-flex justify-content-between pt-4">
+						<div class="form-group col-md-5">
+							<input type="text" name="names" id="names" class="form-control" placeholder="Enter your names" />
+						</div>
+                        <div class="form-group col-md-7">
                             <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" />
                         </div>
-                        <div class="col-md-3">
-                            <button class="btn btn-outline-light btn-block">Subscribe</button>
-                        </div>
+						<div class="form-group col-md-12">
+							<textarea class="form-control" name="message" placeholder="Enter Message"></textarea>
+						</div>
+						<div class="form-group col-md-3 ml-auto">
+							<button type="button" class="btn btn-outline-light">Submit</button>
+						</div>
                     </div>
-                    
+
                 </form>
             </div>
         </section>
-        -->
+        
         <footer id="main-footer" class="text-muted p-2">
-            <div class="row align-items-end">
+            <div class="row align-items-center">
                 <div class="col-md-6">
-                    <p>&copy;2018 Audi. All rights reserved.</p>
+                    <p class="pl-3">&copy;2018 Audi. All rights reserved.</p>
                 </div>
-                <!--<div id="subscribe" class="col-md-4">
-                    <form>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" />
-                        </div>
-                        <div>
-                            <button class="btn btn-outline-secondary btn-block">Subscribe</button>
-                        </div>
-                    </form>
-                </div>-->
-                <div id="menu" class="col-md-6">
-                    <p>Follow us: </p>
+                <div id="menu" class="col-md-6 text-right pr-4">
+                    <p class="pr-3">Follow us:</p>
                     <div class="nav">
                         <a class="nav-link" href="https://www.youtube.com/user/Audi"><i class="fab fa-youtube"></i></a>
                         <a class="nav-link" href="https://www.facebook.com/audi/"><i class="fab fa-facebook-f"></i></a>
@@ -143,5 +141,23 @@
                 }
             });
         </script>
+
+		<script>
+			$(function () {
+				// Smooth Scrolling
+				$('a[href*="#"]:not([href="#"])').click(function () {
+					if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+						var target = $(this.hash);
+						target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+						if (target.length) {
+							$('html, body').animate({
+								scrollTop: target.offset().top
+							}, 1000);
+							return false;
+						}
+					}
+				});
+			});
+		</script>
     </body>
 </html>
